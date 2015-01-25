@@ -1,32 +1,10 @@
-# Vivim
+" My .vimrc configuration - Support Python, PHP, Golang, Markdown and
+" Javascript Files
+"
+" Author: Vinicius Souza - http://github.com/vsouza
+" For more information type :help followed by the command.
 
-Vim setup
-
-## Plugins 
-
-```
-'gmarik/Vundle.vim'
-'airblade/vim-gitgutter'
-'scrooloose/syntastic'
-'tpope/vim-markdown'
-'Lokaltog/vim-powerline'
-'nathanaelkane/vim-indent-guides'
-'tpope/vim-commentary'
-'terryma/vim-multiple-cursors'
-'digitaltoad/vim-jade'
-'kien/ctrlp.vim'
-'chriskempson/tomorrow-theme'
-
-## Theme
-
-[Tommorrow-Night](https://github.com/chriskempson/tomorrow-theme)
-<img src="http://cl.ly/image/2717382F2z46/Screen%20Shot%202015-01-25%20at%204.25.10%20AM.png" width="600">
-
-## Customizations
-
-__Basic Configurations__
-
-```
+" Basic configuration
 set t_Co=256
 colorscheme Tomorrow-Night      " awesome colorscheme
 syntax enable                   " enable syntax processing
@@ -36,10 +14,8 @@ set expandtab                   " tabs are spaces
 set linebreak                   " Causes vim to not wrap text in the middle of a word
 set pastetoggle=<F9>            " Useful so auto-indenting doesn't mess up code when pasting
 set backspace=indent,eol,start
-```
 
-__UI config__
-```
+" UI config
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 "set cursorline          " highlight current line
@@ -47,35 +23,42 @@ filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
-```
 
-__Search__
-```
+" Search
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
-```
 
-__Folders__
-```
+
+" Folders
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 nnoremap <space> za 
 set foldmethod=indent   " fold based on indent level
-```
 
-__Movements__
-```
+" Move =====
+
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
 
 " highlight last inserted text
 nnoremap gV `[v`] 
-```
 
-## License
-
-[MIT License](http://vsouza.mit-license.org/) © Vinicius Souza
-
+" Plugins
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-markdown'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-commentary'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'kien/ctrlp.vim'
+Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+call vundle#end()  
