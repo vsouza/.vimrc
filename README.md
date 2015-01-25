@@ -1,6 +1,6 @@
 # Vivim
 
-Vim setup
+Vim Setup with Bundle and a beautiful theme and fonts.
 
 ## Plugins 
 
