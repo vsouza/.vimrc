@@ -16,11 +16,13 @@ Vim setup
 'digitaltoad/vim-jade'
 'kien/ctrlp.vim'
 'chriskempson/tomorrow-theme'
+```
 
 ## Theme
 
 [Tommorrow-Night](https://github.com/chriskempson/tomorrow-theme)
-<img src="http://cl.ly/image/2717382F2z46/Screen%20Shot%202015-01-25%20at%204.25.10%20AM.png" width="600">
+
+<img src="http://cl.ly/image/2717382F2z46/Screen%20Shot%202015-01-25%20at%204.25.10%20AM.png">
 
 ## Customizations
 
