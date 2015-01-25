@@ -18,11 +18,16 @@ Vim setup
 'chriskempson/tomorrow-theme'
 ```
 
-## Theme
+## Appearence
+
+__Theme__
 
 [Tommorrow-Night](https://github.com/chriskempson/tomorrow-theme)
 
-<img src="http://cl.ly/image/2717382F2z46/Screen%20Shot%202015-01-25%20at%204.25.10%20AM.png">
+<img src="http://cl.ly/image/1K0g2F3G1X45/Screen%20Shot%202015-01-25%20at%204.36.51%20AM.png">
+
+__Font__
+[Source code pro](http://blog.typekit.com/2012/09/24/source-code-pro/)
 
 ## Customizations
 
