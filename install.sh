@@ -2,4 +2,4 @@
 
 readonly file=$HOME/.vimrc
 
-cp .vimrc ~/$HOME/ 
+cp .vimrc ~/
