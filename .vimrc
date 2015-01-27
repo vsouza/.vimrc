@@ -10,10 +10,15 @@ colorscheme Tomorrow-Night      " awesome colorscheme
 syntax enable                   " enable syntax processing
 set tabstop=4                   " number of visual spaces per TAB
 set softtabstop=4               " number of spaces in tab when editing
-" set expandtab                   " tabs are spaces
 set linebreak                   " Causes vim to not wrap text in the middle of a word
 set pastetoggle=<F9>            " Useful so auto-indenting doesn't mess up code when pasting
 set backspace=indent,eol,start
+set shiftwidth=4
+set textwidth=80
+set smarttab
+set expandtab
+filetype plugin indent on
+set encoding=utf-8
 
 " UI config
 set number              " show line numbers
@@ -64,3 +69,10 @@ Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'rizzatti/dash.vim'
 call vundle#end()  
+
+
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|meteor|pyc)$|node_modules'
+let g:ctrlp_max_height=25
+let g:ctrlp_clear_cache_on_exit=0
