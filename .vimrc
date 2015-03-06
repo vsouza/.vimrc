@@ -59,7 +59,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-markdown'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-commentary'
 Plugin 'terryma/vim-multiple-cursors'
@@ -68,6 +68,11 @@ Plugin 'kien/ctrlp.vim'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'rizzatti/dash.vim'
+Plugin 'szw/vim-ctrlspace' 
+Plugin 'mileszs/ack.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'hhvm/vim-hack'
+Plugin 'fatih/vim-go'
 call vundle#end()  
 
 
@@ -76,3 +81,35 @@ let g:ctrlp_max_depth=40
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|meteor|pyc)$|node_modules'
 let g:ctrlp_max_height=25
 let g:ctrlp_clear_cache_on_exit=0
+
+" buffers
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+ " Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>  
+
+"tabs
+"
+" For mac users (using the 'apple' key)
+ map <D-S-]> gt
+ map <D-S-[> gT
+ map <D-1> 1gt
+ map <D-2> 2gt
+ map <D-3> 3gt
+ map <D-4> 4gt
+ map <D-5> 5gt
+ map <D-6> 6gt
+ map <D-7> 7gt
+ map <D-8> 8gt
+ map <D-9> 9gt
+ map <D-0> :tablast<CR>
+
+"Disable arrows"
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
