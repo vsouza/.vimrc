@@ -1,32 +1,48 @@
-# Vivim
+# .vimrc 
 
-Vim Setup with Bundle and a beautiful theme and fonts.
+My Vim Setup with Bundle and a beautiful theme and fonts.
+
+<img src="http://cl.ly/image/030j171s3c3G/Screen%20Shot%202015-04-17%20at%202.09.30%20PM.png">
+
+## Dependencies
+
+ * [Exuberant CTAGS](http://ctags.sourceforge.net)
 
 ## Plugins 
 
-```
-'gmarik/Vundle.vim'
-'airblade/vim-gitgutter'
-'scrooloose/syntastic'
-'tpope/vim-markdown'
-'Lokaltog/vim-powerline'
-'nathanaelkane/vim-indent-guides'
-'tpope/vim-commentary'
-'terryma/vim-multiple-cursors'
-'digitaltoad/vim-jade'
-'kien/ctrlp.vim'
-'chriskempson/tomorrow-theme'
-```
+ * 'gmarik/Vundle.vim'
+ * 'airblade/vim-gitgutter'
+ * 'scrooloose/syntastic'
+ * 'tpope/vim-markdown'
+ * 'bling/vim-airline'
+ * 'nathanaelkane/vim-indent-guides'
+ * 'tpope/vim-commentary'
+ * 'terryma/vim-multiple-cursors'
+ * 'digitaltoad/vim-jade'
+ * 'kien/ctrlp.vim'
+ * 'scrooloose/nerdtree'
+ * 'rizzatti/dash.vim'
+ * 'szw/vim-ctrlspace' 
+ * 'mileszs/ack.vim'
+ * 'shawncplus/phpcomplete.vim'
+ * 'hhvm/vim-hack'
+ * 'fatih/vim-go'
+ * 'elzr/vim-json', {'for' : 'json'}
+ * 'klen/rope-vim'
+ * 'ekalinin/Dockerfile.vim'
+ * 'ervandew/supertab'
+ * 'majutsushi/tagbar'
+ * 'Lokaltog/vim-easymotion'
 
 ## Appearence
 
 __Theme__
 
-[Tommorrow-Night](https://github.com/chriskempson/tomorrow-theme)
+[dracula-theme](https://github.com/zenorocha/dracula-theme)
 
-<img src="http://cl.ly/image/1K0g2F3G1X45/Screen%20Shot%202015-01-25%20at%204.36.51%20AM.png">
 
 __Font__
+
 [Source code pro](http://blog.typekit.com/2012/09/24/source-code-pro/)
 
 ## Customizations
@@ -80,6 +96,47 @@ nnoremap k gk
 
 " highlight last inserted text
 nnoremap gV `[v`] 
+```
+
+__Airline__
+
+```
+let g:airline_left_sep  = '>> '
+let g:airline_right_sep = '<< '
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+```
+
+__Syntastic__
+```
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+```
+
+__Tagbar__
+`nmap <F6> :TagbarToggle<CR>`
+
+__Vim-go__
+```
+let g:go_fmt_fail_silently = 1
+let g:go_fmt_command = "goimports"
+
+let g:go_highlight_space_tab_error = 0
+let g:go_highlight_array_whitespace_error = 0
+let g:go_highlight_trailing_whitespace_error = 0
+
+let g:go_highlight_space_tab_error = 0
+let g:go_highlight_extra_types = 0
+let g:go_highlight_methods = 0
+let g:go_highlight_functions = 0
 ```
 
 ## License
