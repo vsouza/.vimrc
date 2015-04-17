@@ -1,4 +1,4 @@
-# .vimrc 
+# .vimrc
 
 My Vim Setup with Bundle and a beautiful theme and fonts.
 
@@ -8,31 +8,31 @@ My Vim Setup with Bundle and a beautiful theme and fonts.
 
  * [Exuberant CTAGS](http://ctags.sourceforge.net)
 
-## Plugins 
+## Plugins
 
- * 'gmarik/Vundle.vim'
- * 'airblade/vim-gitgutter'
- * 'scrooloose/syntastic'
- * 'tpope/vim-markdown'
- * 'bling/vim-airline'
- * 'nathanaelkane/vim-indent-guides'
- * 'tpope/vim-commentary'
- * 'terryma/vim-multiple-cursors'
- * 'digitaltoad/vim-jade'
- * 'kien/ctrlp.vim'
- * 'scrooloose/nerdtree'
- * 'rizzatti/dash.vim'
- * 'szw/vim-ctrlspace' 
- * 'mileszs/ack.vim'
- * 'shawncplus/phpcomplete.vim'
- * 'hhvm/vim-hack'
- * 'fatih/vim-go'
- * 'elzr/vim-json', {'for' : 'json'}
- * 'klen/rope-vim'
- * 'ekalinin/Dockerfile.vim'
- * 'ervandew/supertab'
- * 'majutsushi/tagbar'
- * 'Lokaltog/vim-easymotion'
+ * [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
+ * [airblade/vim-gitgutter](http://github.com/airblade/vim-gitgutter)
+ * [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
+ * [tpope/vim-markdown](http://github.com/tpope/vim-markdown)
+ * [bling/vim-airline](http://github.com/bling/vim-airline)
+ * [nathanaelkane/vim-indent-guides](http://github.com/nathanaelkane/vim-indent-guides)
+ * [tpope/vim-commentary](http://github.com/tpope/vim-commentary)
+ * [terryma/vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
+ * [digitaltoad/vim-jade](http://github.com/digitaltoad/vim-jade)
+ * [kien/ctrlp.vim](http://github.com/kien/ctrlp.vim)
+ * [scrooloose/nerdtree](http://github.com/scrooloose/nerdtree)
+ * [rizzatti/dash.vim](http://github.com/rizzatti/dash.vim)
+ * [szw/vim-ctrlspace ](http://github.com/szw/vim-ctrlspace)
+ * [mileszs/ack.vim](http://github.com/mileszs/ack.vim)
+ * [shawncplus/phpcomplete.vim](http://github.com/shawncplus/phpcomplete.vim)
+ * [hhvm/vim-hack](http://github.com/hhvm/vim-hack)
+ * [fatih/vim-go](http://github.com/fatih/vim-go)
+ * [elzr/vim-json'](http://github.com/'elzr/vim-json)
+ * [klen/rope-vim](http://github.com/klen/rope-vim)
+ * [ekalinin/Dockerfile.vim](http://github.com/ekalinin/Dockerfile.vim)
+ * [ervandew/supertab](http://github.com/ervandew/supertab)
+ * [majutsushi/tagbar](http://github.com/majutsushi/tagbar)
+ * [Lokaltog/vim-easymotion](http://github.com/'Lokaltog/vim-easymotion)
 
 ## Appearence
 
@@ -84,7 +84,7 @@ __Folders__
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
-nnoremap <space> za 
+nnoremap <space> za
 set foldmethod=indent   " fold based on indent level
 ```
 
@@ -95,7 +95,7 @@ nnoremap j gj
 nnoremap k gk
 
 " highlight last inserted text
-nnoremap gV `[v`] 
+nnoremap gV `[v`]
 ```
 
 __Airline__
