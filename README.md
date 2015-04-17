@@ -32,12 +32,12 @@ __for MacOSX__
  * [phpcomplete.vim](http://github.com/shawncplus/phpcomplete.vim)
  * [vim-hack](http://github.com/hhvm/vim-hack)
  * [vim-go](http://github.com/fatih/vim-go)
- * [vim-json'](http://github.com/'elzr/vim-json)
+ * [vim-json](http://github.com/elzr/vim-json)
  * [rope-vim](http://github.com/klen/rope-vim)
  * [Dockerfile.vim](http://github.com/ekalinin/Dockerfile.vim)
  * [supertab](http://github.com/ervandew/supertab)
  * [tagbar](http://github.com/majutsushi/tagbar)
- * [vim-easymotion](http://github.com/'Lokaltog/vim-easymotion)
+ * [vim-easymotion](http://github.com/Lokaltog/vim-easymotion)
 
 ## Appearence
 
