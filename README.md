@@ -8,38 +8,42 @@ My Vim Setup with Bundle and a beautiful theme and fonts.
 
  * [Exuberant CTAGS](http://ctags.sourceforge.net)
 
+__for MacOSX__
+ ```
+ brew install ctags-exuberant
+ ```
+
 ## Plugins
 
- * [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
- * [airblade/vim-gitgutter](http://github.com/airblade/vim-gitgutter)
- * [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
- * [tpope/vim-markdown](http://github.com/tpope/vim-markdown)
- * [bling/vim-airline](http://github.com/bling/vim-airline)
- * [nathanaelkane/vim-indent-guides](http://github.com/nathanaelkane/vim-indent-guides)
- * [tpope/vim-commentary](http://github.com/tpope/vim-commentary)
- * [terryma/vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
- * [digitaltoad/vim-jade](http://github.com/digitaltoad/vim-jade)
- * [kien/ctrlp.vim](http://github.com/kien/ctrlp.vim)
- * [scrooloose/nerdtree](http://github.com/scrooloose/nerdtree)
- * [rizzatti/dash.vim](http://github.com/rizzatti/dash.vim)
- * [szw/vim-ctrlspace ](http://github.com/szw/vim-ctrlspace)
- * [mileszs/ack.vim](http://github.com/mileszs/ack.vim)
- * [shawncplus/phpcomplete.vim](http://github.com/shawncplus/phpcomplete.vim)
- * [hhvm/vim-hack](http://github.com/hhvm/vim-hack)
- * [fatih/vim-go](http://github.com/fatih/vim-go)
- * [elzr/vim-json'](http://github.com/'elzr/vim-json)
- * [klen/rope-vim](http://github.com/klen/rope-vim)
- * [ekalinin/Dockerfile.vim](http://github.com/ekalinin/Dockerfile.vim)
- * [ervandew/supertab](http://github.com/ervandew/supertab)
- * [majutsushi/tagbar](http://github.com/majutsushi/tagbar)
- * [Lokaltog/vim-easymotion](http://github.com/'Lokaltog/vim-easymotion)
+ * [Vundle.vim](http://github.com/gmarik/Vundle.vim)
+ * [vim-gitgutter](http://github.com/airblade/vim-gitgutter)
+ * [syntastic](http://github.com/scrooloose/syntastic)
+ * [vim-markdown](http://github.com/tpope/vim-markdown)
+ * [vim-airline](http://github.com/bling/vim-airline)
+ * [vim-indent-guides](http://github.com/nathanaelkane/vim-indent-guides)
+ * [vim-commentary](http://github.com/tpope/vim-commentary)
+ * [vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
+ * [vim-jade](http://github.com/digitaltoad/vim-jade)
+ * [ctrlp.vim](http://github.com/kien/ctrlp.vim)
+ * [nerdtree](http://github.com/scrooloose/nerdtree)
+ * [dash.vim](http://github.com/rizzatti/dash.vim)
+ * [vim-ctrlspace ](http://github.com/szw/vim-ctrlspace)
+ * [ack.vim](http://github.com/mileszs/ack.vim)
+ * [phpcomplete.vim](http://github.com/shawncplus/phpcomplete.vim)
+ * [vim-hack](http://github.com/hhvm/vim-hack)
+ * [vim-go](http://github.com/fatih/vim-go)
+ * [vim-json'](http://github.com/'elzr/vim-json)
+ * [rope-vim](http://github.com/klen/rope-vim)
+ * [Dockerfile.vim](http://github.com/ekalinin/Dockerfile.vim)
+ * [supertab](http://github.com/ervandew/supertab)
+ * [tagbar](http://github.com/majutsushi/tagbar)
+ * [vim-easymotion](http://github.com/'Lokaltog/vim-easymotion)
 
 ## Appearence
 
 __Theme__
 
 [dracula-theme](https://github.com/zenorocha/dracula-theme)
-
 
 __Font__
 
@@ -122,7 +126,9 @@ let g:syntastic_check_on_wq = 0
 ```
 
 __Tagbar__
-`nmap <F6> :TagbarToggle<CR>`
+```
+nmap <F6> :TagbarToggle<CR>
+```
 
 __Vim-go__
 ```
