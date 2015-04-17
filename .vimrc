@@ -97,7 +97,7 @@ call vundle#end()
 
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|meteor|pyc)$|node_modules'
+let g:ctrlp_custom_ignore = '\v[\/]\.(DS_Storegit|hg|svn|optimized|compiled|node_modules|pyc)$'
 let g:ctrlp_max_height=25
 let g:ctrlp_clear_cache_on_exit=0
 
