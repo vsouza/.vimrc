@@ -4,6 +4,18 @@ My Vim Setup with Bundle and a beautiful theme and fonts.
 
 <img src="http://cl.ly/image/030j171s3c3G/Screen%20Shot%202015-04-17%20at%202.09.30%20PM.png">
 
+__suports__
+ * Python
+ * Go
+ * PHP
+ * HackLang
+ * HTML
+ * Markdown
+ * jinja2
+ * Blade
+ * Json
+ * and some more..
+ 
 ## Dependencies
 
  * [Exuberant CTAGS](http://ctags.sourceforge.net)
