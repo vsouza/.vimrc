@@ -20,6 +20,7 @@ filetype plugin indent on
 set encoding=utf-8
 set paste
 set nopaste
+set ruler
 
 " UI config
 set number              " show line numbers
@@ -53,6 +54,15 @@ syntax sync minlines=256
 set synmaxcol=300
 set re=1
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+" mouse settings
+set mousehide
+set mouse=a
+set fo=1
+
+" split settings
+set splitright
+set splitbelow
 
 " Move =====
 
@@ -102,9 +112,9 @@ let g:ctrlp_max_height=25
 let g:ctrlp_clear_cache_on_exit=0
 
 " =============================== AIRLINE ===============================
-let g:airline_left_sep  = '>> '
-let g:airline_right_sep = '<< '
-
+" let g:airline_left_sep  = ' '
+" let g:airline_right_sep = ' '
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -136,6 +146,24 @@ let g:syntastic_check_on_wq = 0
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>  
+
+" =================Nerdtree
+let NERDTreeHighlightCursorline = 1
+let NERDTreeIgnore = ['\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index',
+                    \ 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json',
+                    \ '.*\.o$', 'db.db', 'tags.bak']
+
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDChristmasTree = 1
+let NERDTreeChDirMode = 2
+let NERDTreeMapJumpFirstChild = 'gK'
+
+" GitGutter
+let g:gitgutter_eager = 0
+let g:gitgutter_enabled = 1
+let g:gitgutter_max_signs = 1000
+
 
 " ================ Tagbar
 nmap <F6> :TagbarToggle<CR>
