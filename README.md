@@ -14,6 +14,7 @@ __suports__
  * jinja2
  * Blade
  * Json
+ * ReactJS
  * and some more..
  
 ## Dependencies
@@ -50,6 +51,8 @@ __for MacOSX__
  * [supertab](http://github.com/ervandew/supertab)
  * [tagbar](http://github.com/majutsushi/tagbar)
  * [vim-easymotion](http://github.com/Lokaltog/vim-easymotion)
+ * [vim-jsx](https://github.com/mxw/vim-jsx)
+ * [vim-flake8](https://github.com/nvie/vim-flake8)
 
 ## Appearence
 
