@@ -4,6 +4,19 @@ My Vim Setup with Bundle and a beautiful theme and fonts.
 
 <img src="http://cl.ly/image/030j171s3c3G/Screen%20Shot%202015-04-17%20at%202.09.30%20PM.png">
 
+__suports__
+ * Python
+ * Go
+ * PHP
+ * HackLang
+ * HTML
+ * Markdown
+ * jinja2
+ * Blade
+ * Json
+ * ReactJS
+ * and some more..
+ 
 ## Dependencies
 
  * [Exuberant CTAGS](http://ctags.sourceforge.net)
@@ -38,6 +51,8 @@ __for MacOSX__
  * [supertab](http://github.com/ervandew/supertab)
  * [tagbar](http://github.com/majutsushi/tagbar)
  * [vim-easymotion](http://github.com/Lokaltog/vim-easymotion)
+ * [vim-jsx](https://github.com/mxw/vim-jsx)
+ * [vim-flake8](https://github.com/nvie/vim-flake8)
 
 ## Appearence
 
@@ -53,7 +68,7 @@ __Font__
 
 __Basic Configurations__
 
-```
+```viml
 set t_Co=256
 colorscheme Tomorrow-Night      " awesome colorscheme
 syntax enable                   " enable syntax processing
@@ -66,7 +81,7 @@ set backspace=indent,eol,start
 ```
 
 __UI config__
-```
+```viml
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 "set cursorline          " highlight current line
@@ -77,14 +92,14 @@ set showmatch           " highlight matching [{()}]
 ```
 
 __Search__
-```
+```viml
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 ```
 
 __Folders__
-```
+```viml
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
@@ -93,7 +108,7 @@ set foldmethod=indent   " fold based on indent level
 ```
 
 __Movements__
-```
+```viml
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
@@ -104,7 +119,7 @@ nnoremap gV `[v`]
 
 __Airline__
 
-```
+```viml
 let g:airline_left_sep  = '>> '
 let g:airline_right_sep = '<< '
 
@@ -113,7 +128,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 ```
 
 __Syntastic__
-```
+```viml
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -126,12 +141,12 @@ let g:syntastic_check_on_wq = 0
 ```
 
 __Tagbar__
-```
+```viml
 nmap <F6> :TagbarToggle<CR>
 ```
 
 __Vim-go__
-```
+```viml
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "goimports"
 
