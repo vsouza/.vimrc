@@ -160,6 +160,7 @@ let NERDTreeDirArrows = 1
 let NERDChristmasTree = 1
 let NERDTreeChDirMode = 2
 let NERDTreeMapJumpFirstChild = 'gK'
+nmap <F5> :NERDTreeToggle<CR>
 
 " GitGutter
 let g:gitgutter_eager = 0
