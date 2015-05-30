@@ -160,6 +160,44 @@ let g:go_highlight_methods = 0
 let g:go_highlight_functions = 0
 ```
 
+__Buffers__
+```viml
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>  
+```
+
+__Nerdtree__
+```viml
+let NERDTreeHighlightCursorline = 1
+let NERDTreeIgnore = ['\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index',
+                    \ 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json',
+                    \ '.*\.o$', 'db.db', 'tags.bak']
+
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDChristmasTree = 1
+let NERDTreeChDirMode = 2
+let NERDTreeMapJumpFirstChild = 'gK'
+nmap <F5> :NERDTreeToggle<CR>
+```
+
+__GitGutter__
+```viml
+let g:gitgutter_eager = 0
+let g:gitgutter_enabled = 1
+let g:gitgutter_max_signs = 1000
+```
+
+
+__Disable arrows__
+```
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+```
+
 ## License
 
 [MIT License](http://vsouza.mit-license.org/) © Vinicius Souza
