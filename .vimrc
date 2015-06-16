@@ -21,6 +21,10 @@ set encoding=utf-8
 set paste
 set nopaste
 set ruler
+set history=700
+set so=999
+set colorcolumn=80,120
+set hid
 
 " UI config
 set number              " show line numbers
@@ -49,7 +53,7 @@ set ttyfast
 
 " speed up syntax highlighting
 set nocursorcolumn
-set nocursorline
+set cursorline
 syntax sync minlines=256
 set synmaxcol=300
 set re=1
