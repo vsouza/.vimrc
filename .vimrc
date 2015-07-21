@@ -5,7 +5,7 @@
 
 " Basic configuration
 set t_Co=256
-colorscheme Dracula             " awesome colorscheme
+colorscheme Tomorrow-Night      " awesome colorscheme
 syntax enable                   " enable syntax processing
 set tabstop=4                   " number of visual spaces per TAB
 set softtabstop=4               " number of spaces in tab when editing
@@ -25,6 +25,11 @@ set history=700
 set so=999
 set colorcolumn=80,120
 set hid
+
+
+set guioptions-=T " Removes top toolbar
+set go-=L " Removes left hand scroll bar
+
 
 " UI config
 set number              " show line numbers
@@ -109,11 +114,13 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mxw/vim-jsx'
 Plugin 'nvie/vim-flake8'
+Plugin 'kennethzfeng/vim-raml'
+Plugin 'Shougo/neocomplete.vim'
 call vundle#end()  
 
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
-let g:ctrlp_custom_ignore = '\v[\/]\.(DS_Storegit|hg|svn|optimized|compiled|node_modules|pyc)$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(DS_Storegit|hg|svn|optimized|compiled|node_modules|pyc|swp)$'
 let g:ctrlp_max_height=25
 let g:ctrlp_clear_cache_on_exit=0
 
@@ -175,9 +182,19 @@ let g:gitgutter_max_signs = 1000
 " ================ Tagbar
 nmap <F6> :TagbarToggle<CR>
 
+" ================ Neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "Disable arrows"
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" comments
+vmap <leader>cc :s/^/#/<cr>
+vmap <leader>co :s/^#//<cr>
