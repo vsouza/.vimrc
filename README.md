@@ -2,7 +2,7 @@
 
 My Vim Setup with Bundle and a beautiful theme and fonts.
 
-<img src="http://cl.ly/image/030j171s3c3G/Screen%20Shot%202015-04-17%20at%202.09.30%20PM.png">
+<img src="http://cl.ly/image/2H0g0u0Z2K1P/Screen%20Shot%202015-07-21%20at%2015.32.18.png">
 
 __suports__
  * Python
