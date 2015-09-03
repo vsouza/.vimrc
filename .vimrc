@@ -115,7 +115,6 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mxw/vim-jsx'
 Plugin 'nvie/vim-flake8'
 Plugin 'kennethzfeng/vim-raml'
-Plugin 'Shougo/neocomplete.vim'
 call vundle#end()  
 
 let g:ctrlp_max_files=0
