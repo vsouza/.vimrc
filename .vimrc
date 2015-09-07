@@ -107,6 +107,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'ervandew/supertab'
 Plugin 'majutsushi/tagbar'
 Plugin 'nvie/vim-flake8'
+Plugin 'kennethzfeng/vim-raml'
 call vundle#end()  
 
 let g:ctrlp_max_files=0
