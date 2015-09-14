@@ -5,7 +5,7 @@
 
 " Basic configuration
 set t_Co=256
-colorscheme Tomorrow-Night      " awesome colorscheme
+colorscheme hybrid      " awesome colorscheme
 syntax enable                   " enable syntax processing
 set tabstop=4                   " number of visual spaces per TAB
 set softtabstop=4               " number of spaces in tab when editing
@@ -25,7 +25,6 @@ set history=700
 set so=999
 set colorcolumn=80,120
 set hid
-
 
 set guioptions-=T " Removes top toolbar
 set go-=L " Removes left hand scroll bar
@@ -124,18 +123,18 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " ==================== Vim-go ====================
-let g:go_fmt_fail_silently = 1
+let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
 "
 "
 let g:go_highlight_space_tab_error = 0
-let g:go_highlight_array_whitespace_error = 0
+let g:go_highlight_array_whitespace_error = 1
 let g:go_highlight_trailing_whitespace_error = 0
 
-let g:go_highlight_space_tab_error = 0
+let g:go_highlight_space_tab_error = 1 
 let g:go_highlight_extra_types = 0
 let g:go_highlight_methods = 0
-let g:go_highlight_functions = 0
+let g:go_highlight_functions = 1
 
 " ==================== Syntastic
 set statusline+=%#warningmsg#
