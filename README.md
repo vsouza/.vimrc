@@ -58,7 +58,7 @@ __for MacOSX__
 
 __Theme__
 
-[dracula-theme](https://github.com/zenorocha/dracula-theme)
+[hybrid-theme](https://github.com/w0ng/vim-hybrid)
 
 __Font__
 
