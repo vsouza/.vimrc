@@ -5,7 +5,7 @@
 
 " Basic configuration
 set t_Co=256
-colorscheme hybrid      " awesome colorscheme
+colorscheme onedark " awesome colorscheme
 syntax enable                   " enable syntax processing
 set tabstop=4                   " number of visual spaces per TAB
 set softtabstop=4               " number of spaces in tab when editing
@@ -91,22 +91,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-markdown'
 Plugin 'bling/vim-airline'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tpope/vim-commentary'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'rizzatti/dash.vim'
 Plugin 'szw/vim-ctrlspace' 
 Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
 Plugin 'elzr/vim-json', {'for' : 'json'}
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'ervandew/supertab'
-Plugin 'majutsushi/tagbar'
 Plugin 'nvie/vim-flake8'
-Plugin 'kennethzfeng/vim-raml'
 call vundle#end()  
 
 let g:ctrlp_max_files=0
