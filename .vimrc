@@ -5,7 +5,7 @@
 
 " Basic configuration
 set t_Co=256
-colorscheme onedark " awesome colorscheme
+colorscheme dracula" awesome colorscheme
 syntax enable                   " enable syntax processing
 set tabstop=4                   " number of visual spaces per TAB
 set softtabstop=4               " number of spaces in tab when editing
@@ -49,8 +49,7 @@ set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 set foldmethod=indent   " fold based on indent level
-set clipboard^=unnamed      "clipboard
-set clipboard^=unnamedplus  "clipboard
+set clipboard=unnamed      "clipboard
 set ignorecase                  " Search case insensitive
 set smartcase                   " ... but not when search pattern contains upper case characters
 set ttyfast
@@ -85,21 +84,20 @@ vnoremap < <gv  " better identation
 vnoremap > >gv  " better identation
 
 " Plugins
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/syntastic'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'szw/vim-ctrlspace' 
-Plugin 'mileszs/ack.vim'
-Plugin 'fatih/vim-go'
-Plugin 'elzr/vim-json', {'for' : 'json'}
-Plugin 'nvie/vim-flake8'
-call vundle#end()  
+call plug#begin('~/.vim/plugged')
+Plug 'keith/swift.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'szw/vim-ctrlspace' 
+Plug 'mileszs/ack.vim'
+Plug 'fatih/vim-go'
+Plug 'elzr/vim-json', {'for' : 'json'}
+Plug 'nvie/vim-flake8'
+Plug 'keith/swift.vim'
+call plug#end()
 
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
@@ -137,6 +135,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" == Swift
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
 " ================ Buffers
 map gn :bn<cr>
