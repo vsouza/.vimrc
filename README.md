@@ -1,6 +1,6 @@
 # .vimrc
 
-My Vim Setup with Bundle and a beautiful theme and fonts.
+My Vim Setup with Bundle with a beautiful theme and fonts..
 
 <img src="http://cl.ly/image/2H0g0u0Z2K1P/Screen%20Shot%202015-07-21%20at%2015.32.18.png">
 
