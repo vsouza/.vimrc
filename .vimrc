@@ -81,9 +81,9 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'Konfekt/FastFold'
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'akmassey/vim-codeschool'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'elixir-editors/vim-elixir'
 call neobundle#end()
 NeoBundleCheck
 
