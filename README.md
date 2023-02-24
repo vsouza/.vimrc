@@ -15,6 +15,7 @@ __suports__
  * Blade
  * Json
  * ReactJS
+ * NodeJS
  * and some more..
  
 ## Dependencies
